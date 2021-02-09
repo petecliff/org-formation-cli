@@ -13,14 +13,6 @@ Do let me know in [the issues](https://github.com/OlafConijn/AwsOrganizationForm
 
 It could be that the `OrganizationAccountAccessRole` is missing. please log into the account and create the Role manually. There is a CloudFormation template at the bottom of this page.
 
-
-#### I created the account in the AWS Organizations console
-
-It could be that you used a non-default name for the  `OrganizationAccountAccessRole`. Please log into the account and create the Role manually. There is a CloudFormation template at the bottom of this page.
-
-If you feel it is important to support non-default role names for cross account access, let me know in [the issues](https://github.com/OlafConijn/AwsOrganizationFormation/issues).
-
-
 #### CloudFormation template to create the OrganizationAccountAccessRole
 
 **Note**: if you copied the `DenyChangeOfOrgRoleSCP` Policy from the [example organization](../examples/organization.yml) to your organization, make sure you temporarily detach it. Otherwise CloudFormation will fail with an `explicit deny`.
